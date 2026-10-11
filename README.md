@@ -9,7 +9,7 @@ Web application to connect a Solana wallet, track balance and transaction histor
 - SOL balance for the connected wallet
 - Transaction history
 - Network switching between Devnet and Mainnet
-- Built-in Devnet SOL faucet (`POST /api/faucet`), with a 24h cooldown per address, a limit of 3 requests per hour per IP, and 0.08 SOL sent per request
+- Built-in Devnet SOL faucet (`POST /api/faucet`), with a 8h cooldown per address, a limit of 3 requests per hour per IP, and 0.08 SOL sent per request
 
 ## Stack
 
