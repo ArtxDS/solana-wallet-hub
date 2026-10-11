@@ -58,9 +58,8 @@ export function useTransactionHistory() {
       if (requestId !== requestIdRef.current) return;
 
       setHistory(formattedHistory);
-    } catch (error) {
+    } catch {
       if (requestId !== requestIdRef.current) return;
-      console.error("Failed to fetch transaction history:", error);
     } finally {
       if (requestId === requestIdRef.current) setIsLoading(false);
     }

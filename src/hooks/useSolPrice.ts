@@ -26,8 +26,7 @@ export function useSolPrice() {
       }
 
       setPriceUsd(nextPrice);
-    } catch (error) {
-      console.error("Failed to fetch the SOL price from Jupiter:", error);
+    } catch {
     } finally {
       setIsLoading(false);
     }

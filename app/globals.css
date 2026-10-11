@@ -28,10 +28,6 @@
   --font-mono: var(--font-geist-mono);
 }
 
-.mobile-header-control {
-  display: flex !important;
-}
-
 .desktop-header-control {
   display: none !important;
 }
@@ -52,13 +48,11 @@
 
 html {
   min-width: 320px;
-  overflow-x: clip;
   background: var(--background);
 }
 
 body {
   min-height: 100vh;
-  overflow-x: clip;
   background:
     radial-gradient(
       circle at 6% 2%,
@@ -91,16 +85,15 @@ select {
 }
 
 .app-shell {
-  overflow-x: clip;
   position: relative;
 }
 
 .app-shell::before {
   position: absolute;
   top: -3rem;
-  left: 0;
+  left: 35%;
   z-index: -1;
-  width: min(26rem, 100%);
+  width: 26rem;
   height: 20rem;
   content: "";
   pointer-events: none;
@@ -110,13 +103,6 @@ select {
     transparent 68%
   );
   filter: blur(14px);
-}
-
-@media (min-width: 640px) {
-  .app-shell::before {
-    left: 35%;
-    width: 26rem;
-  }
 }
 
 .card-surface {

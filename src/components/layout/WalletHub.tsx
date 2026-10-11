@@ -251,7 +251,6 @@ export function WalletHub({
         { duration: 7000 },
       );
     } catch (error) {
-      console.error("[send] transaction failed:", error);
       toast.error("Falha no envio", {
         description: getSolanaErrorUserMessage(error),
       });
@@ -296,7 +295,6 @@ export function WalletHub({
         description: `${payload.amount ?? 0.08} SOL foi adicionado à sua carteira na Devnet.`,
       });
     } catch (error) {
-      console.error("Airdrop request failed", error);
       let message = "Tente novamente mais tarde.";
 
       if (axios.isAxiosError<{ error?: string }>(error)) {
