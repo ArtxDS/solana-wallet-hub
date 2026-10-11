@@ -1,0 +1,6 @@
+export const OFFICIAL_FAUCET_WALLET_ADDRESS =
+  "GGYwzKtj6VEYxHQNRNyVXztJhAwavgRRyP6VBoPd7FCf";
+
+export const SOL_MINT_ADDRESS = "So11111111111111111111111111111111111111112";
+
+export const PRICE_API_ENDPOINT = "https://lite-api.jup.ag/price/v3";
