@@ -21,4 +21,4 @@ Web application to connect a Solana wallet, track balance and transaction histor
 
 ## Setup
 
-Copy `.env.example` to `.env.local`, fill in the variables, then run `npm install` and `npm run dev`.
+Copy `.env.example` to `.env.local`, fill in the variables, then run `yarn install` and `yarn dev`.
